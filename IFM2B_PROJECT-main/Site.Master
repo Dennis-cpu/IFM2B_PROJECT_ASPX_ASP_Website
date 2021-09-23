@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="IFM2B_PROJECT_main.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <title>Academia®</title>
+</head>
+<body>
+  <nav>
+    <div class="wrapper site-header__wrapper">
+      <a href="#" class="brand"><img src="images/Logo.png" alt="Academia Logo" width="190px"></a>
+      <div class="nav">
+        <button class="nav__toggle" aria-expanded="false" type="button">
+          menu
+        </button>
+        <ul class="nav__wrapper">
+          <li class="nav__item"><a href="Home.aspx">Home</a></li>
+          <li class="nav__item"><a href="About.aspx">About</a></li>
+          <li class="nav__item"><a href="Packages.aspx">Services</a></li>
+          <li class="nav__item"><a href="Tutors.aspx">Find Tutors</a></li>
+          <li class="nav__item"><a href="Login.aspx">Register/Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <h1 class="text-9xl">Academia</h1>
+      <h2 class="text-6xl pb-9">Online Tutors</h2>
+      <a href="Register.aspx"><button
+        class="bg-yellow-500 text-white group-hover:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        type="button">
+        Register Now
+    </button></a>
+    </div>
+  </header>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+    <footer>
+    <div class="container">
+      <ul>
+        <!--li><a href=""><img src="images/Logo.png" alt="" width="60px"></a></li-->
+        <li><a href="Home.aspx">Home</a></li>
+        <li><a href="About.aspx">About</a></li>
+        <li><a href="Contact.aspx">Contacts</a></li>
+      </ul>
+      <p>© All rights reserved.</p>
+
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
