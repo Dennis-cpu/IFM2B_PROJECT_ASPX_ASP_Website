@@ -11,7 +11,7 @@ namespace IFM2B_PROJECT_main
 {
 
 
-    public partial class Register
+    public partial class BecomeTutor
     {
 
         /// <summary>
@@ -42,66 +42,75 @@ namespace IFM2B_PROJECT_main
         protected global::System.Web.UI.HtmlControls.HtmlInputText email;
 
         /// <summary>
-        /// qualifications control.
+        /// desc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect qualifications;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea desc;
 
         /// <summary>
-        /// street control.
+        /// location control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText street;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText location;
 
         /// <summary>
-        /// city control.
+        /// price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText city;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText price;
 
         /// <summary>
-        /// state control.
+        /// message control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText state;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl message;
 
         /// <summary>
-        /// postal_code control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText postal_code;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
-        /// password1 control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword password1;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
-        /// password2 control.
+        /// FileUpload1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword password2;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+
+        /// <summary>
+        /// btnUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpload;
     }
 }

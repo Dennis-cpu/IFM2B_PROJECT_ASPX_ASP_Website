@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Academia_Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Academia_Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="MyUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="city" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="passwd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="postalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="qualification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="street" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyUser" nillable="true" type="tns:MyUser" />
+  <xs:complexType name="User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveOrNot" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Province" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Qualification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StreetAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="User" nillable="true" type="tns:User" />
+  <xs:complexType name="Tutor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Review" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TutorId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Tutor" nillable="true" type="tns:Tutor" />
+  <xs:complexType name="ArrayOfTutor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tutor" nillable="true" type="tns:Tutor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTutor" nillable="true" type="tns:ArrayOfTutor" />
+  <xs:complexType name="MyTutor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="firstname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="price" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyTutor" nillable="true" type="tns:MyTutor" />
+</xs:schema>

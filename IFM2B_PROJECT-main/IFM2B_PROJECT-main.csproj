@@ -50,6 +50,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -106,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="BecomeTutor.aspx" />
     <Content Include="bin\Antlr3.Runtime.dll" />
     <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
     <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
@@ -120,6 +123,19 @@
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Cart.aspx" />
+    <None Include="Connected Services\ACAD_Reference\ACAD_Service.disco" />
+    <None Include="Connected Services\ACAD_Reference\configuration91.svcinfo" />
+    <None Include="Connected Services\ACAD_Reference\configuration.svcinfo" />
+    <Content Include="Connected Services\ACAD_Reference\IFM2B_PROJECT_main.ACAD_Reference.Tutor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ACAD_Reference\IFM2B_PROJECT_main.ACAD_Reference.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ACAD_Reference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -142,6 +158,16 @@
     <Content Include="obj\Debug\build.force" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\IFM2B_PROJECT-main.csproj.AssemblyReference.cache" />
+    <None Include="Connected Services\ACAD_Reference\ACAD_Service.wsdl" />
+    <None Include="Connected Services\ACAD_Reference\ACAD_Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ACAD_Reference\ACAD_Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ACAD_Reference\ACAD_Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="images\Academia Bannner.png" />
     <Content Include="images\Academia YT Bannner.png" />
@@ -202,12 +228,24 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BecomeTutor.aspx.cs">
+      <DependentUpon>BecomeTutor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BecomeTutor.aspx.designer.cs">
+      <DependentUpon>BecomeTutor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cart.aspx.designer.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ACAD_Reference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -285,6 +323,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ACAD_Reference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

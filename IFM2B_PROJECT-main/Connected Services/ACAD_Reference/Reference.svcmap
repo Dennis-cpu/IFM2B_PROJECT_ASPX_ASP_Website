@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f740d05d-b896-496b-886b-8bf88ce9c9ad" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56938/ACAD_Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ACAD_Service.wsdl" MetadataType="Wsdl" ID="4a56b11d-fe76-451b-b8ab-22fbcbc0c4ef" SourceId="1" SourceUrl="http://localhost:56938/ACAD_Service.svc?wsdl" />
+    <MetadataFile FileName="ACAD_Service.disco" MetadataType="Disco" ID="db965444-1176-4726-8a67-813b6e89ff05" SourceId="1" SourceUrl="http://localhost:56938/ACAD_Service.svc?disco" />
+    <MetadataFile FileName="ACAD_Service.xsd" MetadataType="Schema" ID="b94a2a6b-8036-4e08-8c20-eb61ad7b68b2" SourceId="1" SourceUrl="http://localhost:56938/ACAD_Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="ACAD_Service1.xsd" MetadataType="Schema" ID="ef5ab35e-2381-4b92-938a-3304b0d83d5c" SourceId="1" SourceUrl="http://localhost:56938/ACAD_Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="ACAD_Service2.xsd" MetadataType="Schema" ID="2f8fac19-ab00-4e91-ab8a-0676346f66ce" SourceId="1" SourceUrl="http://localhost:56938/ACAD_Service.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

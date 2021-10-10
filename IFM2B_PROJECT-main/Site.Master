@@ -15,7 +15,7 @@
 <body>
   <nav>
     <div class="wrapper site-header__wrapper">
-      <a href="#" class="brand"><img src="images/Logo.png" alt="Academia Logo" width="190px"></a>
+      <a href="Home.aspx" class="brand"><img src="images/Logo.png" alt="Academia Logo" width="190px"></a>
       <div class="nav">
         <button class="nav__toggle" aria-expanded="false" type="button">
           menu
@@ -25,6 +25,7 @@
           <li class="nav__item"><a href="About.aspx">About</a></li>
           <li class="nav__item"><a href="Packages.aspx">Services</a></li>
           <li class="nav__item"><a href="Tutors.aspx">Find Tutors</a></li>
+          <li class="nav__item"><a href="BecomeTutor.aspx">Become a Tutor</a></li>
           <li class="nav__item"><a href="Login.aspx">Register/Login</a></li>
         </ul>
       </div>
@@ -34,10 +35,10 @@
     <div class="container">
       <h1 class="text-9xl">Academia</h1>
       <h2 class="text-6xl pb-9">Online Tutors</h2>
-      <a href="Register.aspx"><button
+      <a href="Tutors.aspx"><button
         class="bg-yellow-500 text-white group-hover:bg-yellow-600 font-bold uppercase text-sm px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
         type="button">
-        Register Now
+        Find a tutor now
     </button></a>
     </div>
   </header>
